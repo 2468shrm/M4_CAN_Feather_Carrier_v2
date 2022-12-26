@@ -6,13 +6,13 @@
 ## Introduction
 The carrier board is an adaptor to make using the Adafruit M4 CAN Express
 Feather board more useful in FRC applications.  It provides the following:
-- Power interface
+- Power interface (J1)
   - Power comes from a 12 V supply through the provided 2-input screw terminal
   - The power supply contains a diode capacitor circuit to reduce the effects of FRC robot brownouts
 - CAN interface
   - On the feather board
   - Note the feather board comes with termination included and active, so you must cut the termination trace jumper
-- Analog I/O
+- Analog I/O (AIO)
   - 4 analog inputs
   - Buffered with a unity gain opamp
   - Proded by 3-pin interface (similar to AIO on RoboRIO)
@@ -20,23 +20,23 @@ Feather board more useful in FRC applications.  It provides the following:
     - Pin 2: 3.3V supply
     - Pin 3: Ground
   - 3.3V input, max
-- Digital I/O
+- Digital I/O (DIO)
   - 4 digital inputs
   - Buffered with a level shifter
   - Selectable sensor voltage (VDD): 3.3V or 5V (all inputs share)
-    - VDD selected by a jumper
+    - VDD selected by a jumper (J5)
     - 1-2 selects 3.3V
     - 2-3 selects 5V
   - Proded by 3-pin interface (similar to AIO on RoboRIO)
     - Pin 1: input analog signal
     - Pin 2: VDD supply
     - Pin 3: Ground
-- Additional sensor power
+- Additional sensor power (J4)
 	- A 2x4 header provided to provide additional VDD power to sensors
     - Intended for Adafruit beam break emitters or other multi-part sensors using an emitter and receiver pair where the receiver connects to DIO and emitter connects to the additional sensor power
-- STEMMA QT/QWIIC
+- STEMMA QT/QWIIC (X1, X2, X3, X4)
   - 4 interfaces provided
-- Neopixel
+- Neopixel (J2)
   - A Neopixel interface provided via a 3-input screw terminal
   - Intended to allow sensor to provide state of the sensor both over CAN and visually (i.e. sensor could be disconnected while still being useful)
 
