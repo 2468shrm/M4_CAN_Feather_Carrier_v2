@@ -1,5 +1,7 @@
 # M4_CAN_Feather_Carrier_v2
 
+![image info](./Images/Board\ Layout.png)
+
 The carrier board is an adaptor to make using the Adafruit M4 CAN Express
 Feather board more useful in FRC applications.  It provides the following:
 - Power interface
