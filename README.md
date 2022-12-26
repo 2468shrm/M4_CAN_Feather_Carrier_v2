@@ -5,7 +5,11 @@
 
 ## Introduction
 The carrier board is an adaptor to make using the Adafruit M4 CAN Express
-Feather board more useful in FRC applications.  It provides the following:
+Feather board more useful in FRC applications.  This is the board as referenced in
+the [frc_can](https://github.com/2468shrm/frc_can) project's CANCarrierBoard module
+(in [can_carrier_board.py](https://github.com/2468shrm/frc_can/blob/main/can_carrier_board.py)).
+
+It provides the following:
 - Power interface (J1)
   - Power comes from a 12 V supply through the provided 2-input screw terminal
   - The power supply contains a diode capacitor circuit to reduce the effects of FRC robot brownouts
